@@ -1,0 +1,241 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1c1917;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #fbbf24;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fbbf24;
+}
+
+/* Hero Section */
+.hero {
+    background:
+        linear-gradient(rgba(28, 25, 23, 0.65), rgba(28, 25, 23, 0.75)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 10%;
+}
+
+.hero h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #f59e0b;
+    color: #1c1917;
+    padding: 13px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #fbbf24;
+}
+
+/* Common Sections */
+section:not(.hero) {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #92400e;
+    margin-bottom: 25px;
+}
+
+/* About Section */
+#about {
+    background-color: white;
+}
+
+#about p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* Menu Section */
+#menu {
+    background-color: #fff7ed;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.menu-card {
+    background-color: white;
+    width: 280px;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-card h3 {
+    color: #78350f;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.menu-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.menu-card strong {
+    color: #d97706;
+    font-size: 20px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #292524;
+    color: white;
+}
+
+#contact h2 {
+    color: #fbbf24;
+}
+
+#contact p {
+    margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1917;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .hero {
+        padding: 90px 5%;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    section:not(.hero) {
+        padding: 50px 5%;
+    }
+
+    .menu-card {
+        width: 100%;
+    }
+}
+
+/* Table Booking Form */
+.booking-form {
+    max-width: 550px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d6d3d1;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+    color: #333;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    outline: 2px solid #f59e0b;
+    border-color: #f59e0b;
+}
+
+.booking-form button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+}

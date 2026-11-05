@@ -1,0 +1,251 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0f172a;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #60a5fa;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* All Sections */
+section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #1d4ed8;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Home Section */
+#home {
+    background-color: #dbeafe;
+    padding: 120px 10%;
+}
+
+#home h2 {
+    font-size: 42px;
+    color: #0f172a;
+}
+
+#home p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #1e40af;
+}
+
+/* Services and Why Us */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+li {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-weight: bold;
+}
+
+/* About */
+#about {
+    background-color: white;
+}
+
+/* Contact */
+#contact {
+    background-color: #0f172a;
+    color: white;
+}
+
+#contact h2 {
+    color: #60a5fa;
+}
+
+#contact a:not(.btn) {
+    color: #93c5fd;
+}
+
+/* Footer */
+footer {
+    background-color: #020617;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    #home {
+        padding: 80px 5%;
+    }
+
+    #home h2 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    li {
+        width: 100%;
+    }
+}
+
+
+/* WhatsApp Floating Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 22px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #f1f5f9;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.portfolio-card {
+    background: white;
+    width: 300px;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.14);
+}
+
+.portfolio-card h3 {
+    color: #0f172a;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.portfolio-card p {
+    color: #64748b;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.portfolio-card span {
+    display: inline-block;
+    color: #2563eb;
+    background: #eff6ff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .portfolio-card {
+        width: 100%;
+    }
+}
+
+.portfolio-card .btn {
+    margin-top: 20px;
+}
