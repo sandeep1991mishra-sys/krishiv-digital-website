@@ -1,0 +1,379 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: #0f172a;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #d4af37;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #e2e8f0;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+.header-btn {
+    background-color: #d4af37;
+    color: #0f172a;
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 620px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(15, 23, 42, 0.94),
+            rgba(15, 23, 42, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 100px 8%;
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-tag,
+.section-tag {
+    display: inline-block;
+    color: #d4af37;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #d4af37;
+}
+
+.hero p {
+    font-size: 19px;
+    color: #e2e8f0;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #0f172a;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f0cf62;
+}
+
+.btn-outline {
+    display: inline-block;
+    color: #ffffff;
+    border: 1px solid #d4af37;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-outline:hover {
+    background-color: #d4af37;
+    color: #0f172a;
+}
+
+/* General Sections */
+section:not(.hero) {
+    padding: 85px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+section > p {
+    color: #64748b;
+    font-size: 17px;
+    max-width: 750px;
+    margin: 0 auto 40px;
+}
+
+/* About Section */
+#about {
+    background-color: #f8fafc;
+}
+
+#about > p {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    color: #64748b;
+    font-size: 18px;
+}
+
+/* Statistics */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.stat-card {
+    width: 220px;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.stat-card h3 {
+    color: #b89120;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.stat-card p {
+    color: #64748b;
+}
+
+/* Services Section */
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 35px 25px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid #d4af37;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card h3 {
+    color: #0f172a;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #64748b;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #f1f5f9;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.project-card {
+    width: 350px;
+    padding: 35px 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+}
+
+.project-card h3 {
+    color: #0f172a;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #64748b;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffffff;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 35px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #b89120;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 25px 8%;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 80px 6%;
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section:not(.hero) {
+        padding: 60px 6%;
+    }
+
+    section h2 {
+        font-size: 29px;
+    }
+
+    .service-card,
+    .project-card {
+        width: 100%;
+    }
+}
